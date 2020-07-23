@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="yl2-sM-qoP">
+            <objects>
+                <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
+                        <rect key="frame" x="0.0" y="975" width="768" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="LPa-aZ-SK2" kind="relationship" relationship="viewControllers" id="9De-Rb-9bL"/>
+                        <segue destination="HQU-qb-4y1" kind="relationship" relationship="viewControllers" id="cS3-sg-jiU"/>
+                        <segue destination="hH3-uu-MZV" kind="relationship" relationship="viewControllers" id="zvu-FX-GZ4"/>
+                        <segue destination="6Nd-hW-36d" kind="relationship" relationship="viewControllers" id="yMU-kH-849"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-807" y="-21"/>
+        </scene>
+        <!--Study Guide-->
+        <scene sceneID="2up-Mo-5OY">
+            <objects>
+                <viewController id="hH3-uu-MZV" customClass="StudyGuideViewController" customModule="HolyBibleDailyScriptures" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="M1J-gE-Ovh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RZL-zO-o3g">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="9jc-ST-Ffd"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="Study Guide" id="Oj4-xB-w98"/>
+                                </items>
+                            </navigationBar>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yag-aO-pN5">
+                                <rect key="frame" x="20" y="108" width="389" height="705"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="ADf-6T-n82">
+                                        <rect key="frame" x="0.0" y="0.0" width="389" height="223"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DailyScripturesHeading" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vi9-rj-8xh">
+                                                <rect key="frame" x="0.0" y="0.0" width="389" height="24"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DailyScripturesDetail" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NZf-aO-OaZ">
+                                                <rect key="frame" x="0.0" y="44" width="389" height="17"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VerseOfTheDayHeading" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3zu-9v-5uU">
+                                                <rect key="frame" x="0.0" y="81" width="389" height="24"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VerseOfTheDayDetail" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SEF-xa-mrE">
+                                                <rect key="frame" x="0.0" y="125" width="389" height="17"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="StudyGuideHeader" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dAf-U6-D56">
+                                                <rect key="frame" x="0.0" y="162" width="389" height="24"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="StudyGuideDetail" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5qh-Ac-a3j">
+                                                <rect key="frame" x="0.0" y="206" width="389" height="17"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="ADf-6T-n82" secondAttribute="trailing" id="H44-mR-bIl"/>
+                                    <constraint firstAttribute="bottom" secondItem="ADf-6T-n82" secondAttribute="bottom" id="bBW-5e-WLa"/>
+                                    <constraint firstItem="ADf-6T-n82" firstAttribute="width" secondItem="yag-aO-pN5" secondAttribute="width" id="oge-OC-sHj"/>
+                                    <constraint firstItem="ADf-6T-n82" firstAttribute="top" secondItem="yag-aO-pN5" secondAttribute="top" id="qaC-g2-JFs"/>
+                                    <constraint firstItem="ADf-6T-n82" firstAttribute="leading" secondItem="yag-aO-pN5" secondAttribute="leading" id="sfG-em-Pwx"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="RZL-zO-o3g" firstAttribute="top" secondItem="v00-L6-B6v" secondAttribute="top" id="2FK-M9-I1b"/>
+                            <constraint firstItem="yag-aO-pN5" firstAttribute="leading" secondItem="RZL-zO-o3g" secondAttribute="leading" constant="20" id="8Mm-5n-DLA"/>
+                            <constraint firstItem="v00-L6-B6v" firstAttribute="trailing" secondItem="yag-aO-pN5" secondAttribute="trailing" constant="5" id="ROA-c9-KY7"/>
+                            <constraint firstItem="yag-aO-pN5" firstAttribute="bottom" secondItem="v00-L6-B6v" secondAttribute="bottom" id="eVE-aV-stx"/>
+                            <constraint firstItem="yag-aO-pN5" firstAttribute="top" secondItem="RZL-zO-o3g" secondAttribute="bottom" constant="20" id="fSI-wk-CDX"/>
+                            <constraint firstItem="RZL-zO-o3g" firstAttribute="leading" secondItem="v00-L6-B6v" secondAttribute="leading" id="rdn-81-XqK"/>
+                            <constraint firstItem="RZL-zO-o3g" firstAttribute="trailing" secondItem="v00-L6-B6v" secondAttribute="trailing" id="vPY-e3-fz4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="v00-L6-B6v"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Study Guide" image="person.2.fill" catalog="system" id="8Qy-5V-Gx7"/>
+                    <connections>
+                        <outlet property="dailyScripturesDetailLabel" destination="NZf-aO-OaZ" id="VQe-wL-Vdg"/>
+                        <outlet property="dailyScripturesHeaderLabel" destination="vi9-rj-8xh" id="8UG-Ki-P3a"/>
+                        <outlet property="navBar" destination="RZL-zO-o3g" id="EKQ-L7-6OT"/>
+                        <outlet property="studyGuideDetailLabel" destination="5qh-Ac-a3j" id="MaZ-mU-KOH"/>
+                        <outlet property="studyGuideHeaderLabel" destination="dAf-U6-D56" id="0wk-7m-yEU"/>
+                        <outlet property="verseOfTheDayDetailLabel" destination="SEF-xa-mrE" id="piC-zl-J56"/>
+                        <outlet property="verseOfTheDayHeaderLabel" destination="3zu-9v-5uU" id="n52-cH-WwI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4ga-ut-w2Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="21.739130434782609" y="516.96428571428567"/>
+        </scene>
+        <!--Verse of the Day-->
+        <scene sceneID="2nL-nc-2LF">
+            <objects>
+                <viewController id="HQU-qb-4y1" customClass="VerseOfTheDayViewController" customModule="HolyBibleDailyScriptures" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wYz-EP-MSv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S5q-xU-bUD">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="c3t-FN-ZzD"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="Verse of the Day" id="BMO-YY-DXG"/>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Verse Info" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6f0-Os-GGh">
+                                <rect key="frame" x="20" y="476" width="374" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="17" id="Eqt-Jn-S3q"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="17" id="usI-IJ-GeT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Translation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FXx-6r-JCa">
+                                <rect key="frame" x="20" y="501" width="374" height="12"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="12" id="FoV-Ev-MNr"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="12" id="cCZ-bf-Os9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Verse" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vzl-tK-HgW">
+                                <rect key="frame" x="20" y="268" width="374" height="198"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="vzl-tK-HgW" firstAttribute="leading" secondItem="gFc-Pq-CGX" secondAttribute="leading" constant="20" id="4BY-aq-UKY"/>
+                            <constraint firstItem="6f0-Os-GGh" firstAttribute="top" secondItem="vzl-tK-HgW" secondAttribute="bottom" constant="10" id="5Vp-Fr-SGq"/>
+                            <constraint firstItem="6f0-Os-GGh" firstAttribute="leading" secondItem="gFc-Pq-CGX" secondAttribute="leading" constant="20" id="82J-Bf-ciq"/>
+                            <constraint firstItem="vzl-tK-HgW" firstAttribute="top" secondItem="S5q-xU-bUD" secondAttribute="bottom" constant="180" id="EHt-9Y-jhd"/>
+                            <constraint firstItem="FXx-6r-JCa" firstAttribute="top" secondItem="6f0-Os-GGh" secondAttribute="bottom" constant="8" id="Gzv-JR-GlC"/>
+                            <constraint firstItem="gFc-Pq-CGX" firstAttribute="trailing" secondItem="FXx-6r-JCa" secondAttribute="trailing" constant="20" id="OHU-G3-Bu6"/>
+                            <constraint firstItem="S5q-xU-bUD" firstAttribute="top" secondItem="gFc-Pq-CGX" secondAttribute="top" id="Rdf-uk-4aR"/>
+                            <constraint firstItem="FXx-6r-JCa" firstAttribute="leading" secondItem="gFc-Pq-CGX" secondAttribute="leading" constant="20" id="UQi-zU-flP"/>
+                            <constraint firstItem="gFc-Pq-CGX" firstAttribute="trailing" secondItem="6f0-Os-GGh" secondAttribute="trailing" constant="20" id="VH4-U1-dOd"/>
+                            <constraint firstItem="S5q-xU-bUD" firstAttribute="trailing" secondItem="gFc-Pq-CGX" secondAttribute="trailing" id="iSn-jM-62r"/>
+                            <constraint firstItem="S5q-xU-bUD" firstAttribute="leading" secondItem="gFc-Pq-CGX" secondAttribute="leading" id="l4n-CX-BMl"/>
+                            <constraint firstItem="FXx-6r-JCa" firstAttribute="top" secondItem="6f0-Os-GGh" secondAttribute="bottom" constant="8" id="wBl-uY-JFe"/>
+                            <constraint firstItem="gFc-Pq-CGX" firstAttribute="trailing" secondItem="vzl-tK-HgW" secondAttribute="trailing" constant="20" id="wbU-tH-LeZ"/>
+                            <constraint firstItem="gFc-Pq-CGX" firstAttribute="bottom" secondItem="FXx-6r-JCa" secondAttribute="bottom" constant="300" id="weh-ch-KhF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="gFc-Pq-CGX"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Verse of the Day" image="bookmark.fill" catalog="system" id="X5G-qk-z8Q"/>
+                    <connections>
+                        <outlet property="navBar" destination="S5q-xU-bUD" id="DmB-N3-chX"/>
+                        <outlet property="translationLabel" destination="FXx-6r-JCa" id="7Xy-vt-mUs"/>
+                        <outlet property="verseInfoLabel" destination="6f0-Os-GGh" id="Kbi-YY-Iwb"/>
+                        <outlet property="verseLabel" destination="vzl-tK-HgW" id="cpb-ho-FHB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="10U-Yi-TmB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="813.04347826086962" y="118.52678571428571"/>
+        </scene>
+        <!--About-->
+        <scene sceneID="S51-0K-dTh">
+            <objects>
+                <viewController id="6Nd-hW-36d" customClass="AboutViewController" customModule="HolyBibleDailyScriptures" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oUD-c0-6gQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HFR-05-ADg">
+                                <rect key="frame" x="184" y="84" width="46.5" height="56"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Home" translatesAutoresizingMaskIntoConstraints="NO" id="FAa-4O-iIK">
+                                <rect key="frame" x="157" y="160" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="1gg-wj-c31"/>
+                                    <constraint firstAttribute="height" constant="100" id="NCT-UL-RuL"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="'Holy Bible Daily Scriptures' is an open source project built by Michael Bullock using data from bible-api.com" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RBB-So-kgj">
+                                <rect key="frame" x="30" y="275" width="354" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="Kog-hM-f1r"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X5t-mF-8h4">
+                                <rect key="frame" x="50" y="395" width="314" height="1"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="Djg-1U-hVa"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="zdh-Ua-0e7">
+                                <rect key="frame" x="50" y="418" width="314" height="60"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Mu-9S-lSW">
+                                        <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                        <state key="normal" title="share" image="Share_Icon"/>
+                                        <connections>
+                                            <action selector="buttonPressed:" destination="6Nd-hW-36d" eventType="touchUpInside" id="z53-fZ-ua2"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pOA-Qx-df7">
+                                        <rect key="frame" x="85" y="0.0" width="59.5" height="60"/>
+                                        <state key="normal" title="email" image="Mail_Icon"/>
+                                        <connections>
+                                            <action selector="buttonPressed:" destination="6Nd-hW-36d" eventType="touchUpInside" id="qS0-xe-zZK"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GeS-Ps-RJz">
+                                        <rect key="frame" x="169.5" y="0.0" width="60" height="60"/>
+                                        <state key="normal" title="gitHub" image="GitHub_Icon"/>
+                                        <connections>
+                                            <action selector="buttonPressed:" destination="6Nd-hW-36d" eventType="touchUpInside" id="eSO-bx-FvO"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1qb-ya-I7h">
+                                        <rect key="frame" x="254.5" y="0.0" width="59.5" height="60"/>
+                                        <state key="normal" title="linkedIn" image="LinkedIn_Icon"/>
+                                        <connections>
+                                            <action selector="buttonPressed:" destination="6Nd-hW-36d" eventType="touchUpInside" id="0R7-K5-1gG"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="tintColor" red="0.53610751300000004" green="0.35558091809999998" blue="0.12254196990000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="fpw-Ic-7nJ"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="App Version &amp; Build" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dx9-1I-sa9">
+                                <rect key="frame" x="131.5" y="754.5" width="151" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This product uses the Bible-Api.com API but is not endorsed or certified by them." textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4uA-m2-iRD">
+                                <rect key="frame" x="30" y="666.5" width="354" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="yLa-MI-v7O"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="FAa-4O-iIK" firstAttribute="top" secondItem="HFR-05-ADg" secondAttribute="bottom" constant="20" id="0AN-fD-95s"/>
+                            <constraint firstItem="zdh-Ua-0e7" firstAttribute="top" secondItem="X5t-mF-8h4" secondAttribute="bottom" constant="22" id="0m4-a4-GS1"/>
+                            <constraint firstItem="zdh-Ua-0e7" firstAttribute="centerY" secondItem="oUD-c0-6gQ" secondAttribute="centerY" id="3bC-na-dgJ"/>
+                            <constraint firstItem="Dx9-1I-sa9" firstAttribute="top" secondItem="4uA-m2-iRD" secondAttribute="bottom" constant="28" id="7g7-YN-8Ni"/>
+                            <constraint firstItem="zdh-Ua-0e7" firstAttribute="centerX" secondItem="oUD-c0-6gQ" secondAttribute="centerX" id="9im-QB-Ik2"/>
+                            <constraint firstItem="X5t-mF-8h4" firstAttribute="leading" secondItem="oUD-c0-6gQ" secondAttribute="leadingMargin" constant="30" id="Dp2-12-JHZ"/>
+                            <constraint firstAttribute="trailing" secondItem="4uA-m2-iRD" secondAttribute="trailing" constant="30" id="R78-5G-MiO"/>
+                            <constraint firstItem="RBB-So-kgj" firstAttribute="centerX" secondItem="oUD-c0-6gQ" secondAttribute="centerX" id="S7Z-BU-X0z"/>
+                            <constraint firstItem="4uA-m2-iRD" firstAttribute="leading" secondItem="jLs-VH-kBz" secondAttribute="leading" constant="30" id="SIR-ru-M2T"/>
+                            <constraint firstItem="zdh-Ua-0e7" firstAttribute="width" secondItem="X5t-mF-8h4" secondAttribute="width" id="T6N-mh-Hl4"/>
+                            <constraint firstItem="X5t-mF-8h4" firstAttribute="centerX" secondItem="RBB-So-kgj" secondAttribute="centerX" id="Xo1-Fh-X1B"/>
+                            <constraint firstItem="FAa-4O-iIK" firstAttribute="centerX" secondItem="HFR-05-ADg" secondAttribute="centerX" id="Zh5-5j-wHh"/>
+                            <constraint firstItem="Dx9-1I-sa9" firstAttribute="centerX" secondItem="oUD-c0-6gQ" secondAttribute="centerX" id="Zyf-UK-v0g"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="X5t-mF-8h4" secondAttribute="trailing" constant="30" id="eoa-2N-QZf"/>
+                            <constraint firstItem="HFR-05-ADg" firstAttribute="top" secondItem="jLs-VH-kBz" secondAttribute="top" constant="40" id="kFW-XL-wlm"/>
+                            <constraint firstItem="RBB-So-kgj" firstAttribute="top" secondItem="FAa-4O-iIK" secondAttribute="bottom" constant="15" id="l6I-V5-Hsb"/>
+                            <constraint firstItem="RBB-So-kgj" firstAttribute="leading" secondItem="oUD-c0-6gQ" secondAttribute="leading" constant="30" id="pXu-bV-8H8"/>
+                            <constraint firstItem="X5t-mF-8h4" firstAttribute="top" secondItem="RBB-So-kgj" secondAttribute="bottom" id="qiD-36-cHH"/>
+                            <constraint firstItem="jLs-VH-kBz" firstAttribute="bottom" secondItem="Dx9-1I-sa9" secondAttribute="bottom" constant="38" id="syv-wp-GBw"/>
+                            <constraint firstItem="HFR-05-ADg" firstAttribute="centerX" secondItem="oUD-c0-6gQ" secondAttribute="centerX" id="t5R-WB-ixM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="jLs-VH-kBz"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="About" image="About" id="LRA-aM-fzm"/>
+                    <connections>
+                        <outlet property="appVersionAndBuildLabel" destination="Dx9-1I-sa9" id="bK1-MC-tVH"/>
+                        <outlet property="logoImageView" destination="FAa-4O-iIK" id="YH5-TH-exc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GBd-j9-8wp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-807.24637681159425" y="695.75892857142856"/>
+        </scene>
+        <!--Daily Scriptures-->
+        <scene sceneID="b18-C5-O9G">
+            <objects>
+                <viewController id="LPa-aZ-SK2" customClass="DailyScripturesViewController" customModule="HolyBibleDailyScriptures" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DeW-DN-FEh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Fg-Yd-qB1">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="HxB-ca-Ndf"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="Daily Scriptures" id="8We-ki-YiR"/>
+                                </items>
+                            </navigationBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="l7I-Cc-IPp">
+                                <rect key="frame" x="0.0" y="138" width="414" height="675"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="DailyScriptureCell" rowHeight="137" id="q5D-9D-emJ">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="137"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="q5D-9D-emJ" id="j2t-Gf-sNK">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="137"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <sections/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="l7I-Cc-IPp" firstAttribute="leading" secondItem="daS-UY-Ymi" secondAttribute="leading" id="63i-DJ-kWD"/>
+                            <constraint firstItem="1Fg-Yd-qB1" firstAttribute="trailing" secondItem="daS-UY-Ymi" secondAttribute="trailing" id="GUO-Uh-qMx"/>
+                            <constraint firstItem="1Fg-Yd-qB1" firstAttribute="top" secondItem="daS-UY-Ymi" secondAttribute="top" id="Gcp-26-ybR"/>
+                            <constraint firstItem="1Fg-Yd-qB1" firstAttribute="trailing" secondItem="daS-UY-Ymi" secondAttribute="trailing" id="IVu-8P-JJ8"/>
+                            <constraint firstItem="1Fg-Yd-qB1" firstAttribute="leading" secondItem="daS-UY-Ymi" secondAttribute="leading" id="PPr-sx-VcP"/>
+                            <constraint firstItem="daS-UY-Ymi" firstAttribute="trailing" secondItem="l7I-Cc-IPp" secondAttribute="trailing" id="REb-fr-EXM"/>
+                            <constraint firstItem="1Fg-Yd-qB1" firstAttribute="leading" secondItem="daS-UY-Ymi" secondAttribute="leading" id="W6a-qe-zb5"/>
+                            <constraint firstItem="l7I-Cc-IPp" firstAttribute="top" secondItem="1Fg-Yd-qB1" secondAttribute="bottom" constant="50" id="XHV-Eh-2pK"/>
+                            <constraint firstItem="daS-UY-Ymi" firstAttribute="bottom" secondItem="l7I-Cc-IPp" secondAttribute="bottom" id="XNK-a5-9Qj"/>
+                            <constraint firstItem="1Fg-Yd-qB1" firstAttribute="top" secondItem="daS-UY-Ymi" secondAttribute="top" id="lWm-cB-Ig5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="daS-UY-Ymi"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Daily Scriptures" image="book.fill" catalog="system" id="GwJ-Th-qNr"/>
+                    <connections>
+                        <outlet property="navigationBar" destination="1Fg-Yd-qB1" id="ASV-Rm-Gaw"/>
+                        <outlet property="tableView" destination="l7I-Cc-IPp" id="Pi8-43-I7y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sqq-6k-Glu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-52.173913043478265" y="-354.24107142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="About" width="30" height="30"/>
+        <image name="GitHub_Icon" width="120" height="117"/>
+        <image name="Home" width="341" height="341"/>
+        <image name="LinkedIn_Icon" width="111" height="111"/>
+        <image name="Mail_Icon" width="120" height="120"/>
+        <image name="Share_Icon" width="120" height="120"/>
+        <image name="book.fill" catalog="system" width="128" height="100"/>
+        <image name="bookmark.fill" catalog="system" width="112" height="128"/>
+        <image name="person.2.fill" catalog="system" width="128" height="80"/>
+    </resources>
+</document>
