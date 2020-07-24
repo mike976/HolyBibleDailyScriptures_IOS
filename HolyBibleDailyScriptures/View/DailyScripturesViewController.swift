@@ -28,6 +28,7 @@ class DailyScripturesViewController: UIViewController {
         self.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
         self.navigationBar.delegate = self
         
+        self.tableView.allowsSelection = false
         self.tableView.separatorColor = UIColor.clear
         self.tableView.backgroundColor = UIColor.backgroundColor
         self.tableView.register(UINib(nibName: "DailyScriptureCell", bundle: nil), forCellReuseIdentifier: "DailyScriptureCell")

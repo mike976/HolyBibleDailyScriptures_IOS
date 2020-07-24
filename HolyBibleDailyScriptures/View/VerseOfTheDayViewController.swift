@@ -39,6 +39,8 @@ class VerseOfTheDayViewController: UIViewController {
         self.translationLabel?.text = ""
         
         self.verseLabel?.textColor = UIColor.navBarBackgroundColor
+        self.verseInfoLabel.textColor = UIColor.black
+        self.translationLabel.textColor = UIColor.black
      
         
         self.loadScriptures()

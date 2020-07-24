@@ -24,6 +24,8 @@ class DailyScriptureCell: UITableViewCell {
         
         self.backgroundColor = UIColor.backgroundColor
         self.verseLabel.textColor = UIColor.navBarBackgroundColor
+        self.verseInfoLabel.textColor = UIColor.black
+        self.translationLabel.textColor = UIColor.black
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

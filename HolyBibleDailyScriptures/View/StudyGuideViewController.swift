@@ -35,6 +35,13 @@ class StudyGuideViewController: UIViewController {
         self.navBar.delegate = self
         self.view.backgroundColor = UIColor.backgroundColor
         
+        self.dailyScripturesHeaderLabel?.textColor = UIColor.black
+        self.verseOfTheDayHeaderLabel?.textColor = UIColor.black
+        self.studyGuideHeaderLabel?.textColor = UIColor.black
+        self.dailyScripturesDetailLabel?.textColor = UIColor.black
+        self.verseOfTheDayDetailLabel?.textColor = UIColor.black
+        self.studyGuideDetailLabel?.textColor = UIColor.black
+        
         self.updateHeaderLabels()
         self.updateDetailLabels()
     }

@@ -142,27 +142,25 @@
                                 </items>
                             </navigationBar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Verse Info" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6f0-Os-GGh">
-                                <rect key="frame" x="20" y="476" width="374" height="17"/>
+                                <rect key="frame" x="20" y="297.5" width="374" height="17"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="17" id="Eqt-Jn-S3q"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="17" id="usI-IJ-GeT"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Translation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FXx-6r-JCa">
-                                <rect key="frame" x="20" y="501" width="374" height="12"/>
+                                <rect key="frame" x="20" y="322.5" width="374" height="12"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="12" id="FoV-Ev-MNr"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="12" id="cCZ-bf-Os9"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Verse" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vzl-tK-HgW">
-                                <rect key="frame" x="20" y="268" width="374" height="198"/>
+                                <rect key="frame" x="20" y="268" width="374" height="19.5"/>
                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -183,7 +181,6 @@
                             <constraint firstItem="S5q-xU-bUD" firstAttribute="leading" secondItem="gFc-Pq-CGX" secondAttribute="leading" id="l4n-CX-BMl"/>
                             <constraint firstItem="FXx-6r-JCa" firstAttribute="top" secondItem="6f0-Os-GGh" secondAttribute="bottom" constant="8" id="wBl-uY-JFe"/>
                             <constraint firstItem="gFc-Pq-CGX" firstAttribute="trailing" secondItem="vzl-tK-HgW" secondAttribute="trailing" constant="20" id="wbU-tH-LeZ"/>
-                            <constraint firstItem="gFc-Pq-CGX" firstAttribute="bottom" secondItem="FXx-6r-JCa" secondAttribute="bottom" constant="300" id="weh-ch-KhF"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="gFc-Pq-CGX"/>
                     </view>
