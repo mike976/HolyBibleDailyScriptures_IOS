@@ -13,16 +13,25 @@ class AboutViewController: UIViewController {
 
     @IBOutlet weak var appVersionAndBuildLabel: UILabel!
     @IBOutlet weak var logoImageView: UIImageView!
+    @IBOutlet weak var aboutLabel: UILabel!
+    @IBOutlet weak var openSourceLabel: UILabel!
+    @IBOutlet weak var productLabel: UILabel!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         self.view.backgroundColor = UIColor.backgroundColor
+        self.appVersionAndBuildLabel.textColor = UIColor.black
+        self.aboutLabel.textColor = UIColor.black
+        self.openSourceLabel.textColor = UIColor.black
+        self.productLabel.textColor = UIColor.black
+        
         
         let versionNumber = Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as! String
         let buildNumber = Bundle.main.object(forInfoDictionaryKey: "CFBundleVersion") as! String
-        appVersionAndBuildLabel.font = UIFont.boldSystemFont(ofSize: 12)
-        appVersionAndBuildLabel.text = "Holy Bible Daily Scriptures v\(versionNumber) build \(buildNumber)"
+        self.appVersionAndBuildLabel.font = UIFont.boldSystemFont(ofSize: 12)
+        self.appVersionAndBuildLabel.text = "Holy Bible Daily Scriptures v\(versionNumber) build \(buildNumber)"
     }
     
     override func viewDidLayoutSubviews() {

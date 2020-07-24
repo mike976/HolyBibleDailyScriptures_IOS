@@ -142,26 +142,26 @@
                                 </items>
                             </navigationBar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Verse Info" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6f0-Os-GGh">
-                                <rect key="frame" x="20" y="297.5" width="374" height="17"/>
+                                <rect key="frame" x="20" y="299.5" width="374" height="17"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="17" id="Eqt-Jn-S3q"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Translation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FXx-6r-JCa">
-                                <rect key="frame" x="20" y="322.5" width="374" height="12"/>
+                                <rect key="frame" x="20" y="324.5" width="374" height="12"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="12" id="FoV-Ev-MNr"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Verse" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vzl-tK-HgW">
-                                <rect key="frame" x="20" y="268" width="374" height="19.5"/>
-                                <fontDescription key="fontDescription" type="italicSystem" pointSize="16"/>
+                                <rect key="frame" x="20" y="268" width="374" height="21.5"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -313,8 +313,11 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="About" image="About" id="LRA-aM-fzm"/>
                     <connections>
+                        <outlet property="aboutLabel" destination="HFR-05-ADg" id="MAP-5B-d5E"/>
                         <outlet property="appVersionAndBuildLabel" destination="Dx9-1I-sa9" id="bK1-MC-tVH"/>
                         <outlet property="logoImageView" destination="FAa-4O-iIK" id="YH5-TH-exc"/>
+                        <outlet property="openSourceLabel" destination="RBB-So-kgj" id="T5k-S0-EOS"/>
+                        <outlet property="productLabel" destination="4uA-m2-iRD" id="OU9-gS-YL5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GBd-j9-8wp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
